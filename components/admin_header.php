@@ -47,9 +47,9 @@
         ?>
             <div class="profile">
                 <img
-                    src="../uploaded_files/<?= htmlspecialchars($fetch_profile['image']); ?>"
+                    src="../uploaded_files/<?= $fetch_profile['image']; ?>"
                     class="logo-img" width="100">
-                <p><?= htmlspecialchars($fetch_profile['name']); ?></p>
+                <p><?= $fetch_profile['name']; ?></p>
 
             </div>
         <?php

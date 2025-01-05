@@ -50,19 +50,6 @@ if (isset($_COOKIE['seller_id'])) {
                     <p>Messages</p>
                     <a href="admin_message.php" class="btn">See Messages</a>
                 </div>
-                
-                <div class="box">
-                    <?php
-                    $select_users = $conn->prepare("SELECT * FROM `users`");
-                    $select_users->execute();
-
-                    $result = $select_users->get_result();
-                    $number_of_users = $result->num_rows;
-                    ?>
-                    <h3><?= $number_of_users; ?></h3>
-                    <p>users accounts</p>
-                    <a href="user_accounts.php" class="btn">See users</a>
-                </div>
                 <div class="box">
                     <?php
                     $select_sellers = $conn->prepare("SELECT * FROM `sellers`");
